@@ -6,7 +6,7 @@ import { Employee } from './employee.model';
   providedIn: 'root'
 })
 export class EmployeeService {
-  url = 'http://localhost:3000/employees/';
+  url = 'employees/';
 
   constructor(private http :HttpClient) { }
 
