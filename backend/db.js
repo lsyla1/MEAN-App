@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost:27017/meanDB', err => {
-    if(!err){
-        console.log('DB Connection Sucessful');
-    } else {
-        console.log('Error in Connection' + err);
-    }
-})
+mongoose.connect("mongodb://localhost:27017/employee", (err) => {
+  if (!err) {
+    console.log("DB Connection Successful");
+  } else {
+    console.log("Error in DB connection" + err);
+  }
+});
 
 module.exports = mongoose;
